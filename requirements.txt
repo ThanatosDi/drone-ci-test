@@ -1,3 +1,5 @@
 -i https://pypi.org/simple
 
 requests==2.25.1
+flask-restful==0.3.8
+flask==1.1.2
