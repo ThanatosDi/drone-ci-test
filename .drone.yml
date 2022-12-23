@@ -8,15 +8,10 @@ steps:
   commands:
   - echo hello
   - echo world
+  when:
+   branch:
+   - main
+   event:
+   - pull_request
   
 ---
-
-kind: pipeline
-name: python-flask-test
-
-steps:
-- name: test
-  image: python:2
-  commands:
-  - pip install pipenv
-  - pipenv install -r requirements.txt
