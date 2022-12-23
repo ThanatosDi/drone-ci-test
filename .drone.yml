@@ -13,5 +13,3 @@ steps:
    - main
    event:
    - pull_request
-  
----
